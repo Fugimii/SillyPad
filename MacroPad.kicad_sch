@@ -3503,7 +3503,7 @@
 				)
 			)
 		)
-		(property "Footprint" "promicro:MODULE_DM-OLED096-636"
+		(property "Footprint" "SillyPad:MODULE_DM-OLED096-636"
 			(at 52.07 36.83 0)
 			(effects
 				(font
@@ -3577,7 +3577,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -3733,7 +3733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 121.92 91.44 0)
 			(effects
 				(font
@@ -3889,7 +3889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 105.41 91.44 0)
 			(effects
 				(font
@@ -4045,7 +4045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 138.43 113.03 0)
 			(effects
 				(font
@@ -4190,7 +4190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 154.94 134.62 0)
 			(effects
 				(font
@@ -4260,7 +4260,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_THT"
+		(property "Footprint" "SillyPad:RaspberryPi_Pico_Common_THT"
 			(at 53.34 144.78 0)
 			(effects
 				(font
@@ -4530,7 +4530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 154.94 69.85 0)
 			(effects
 				(font
@@ -4686,7 +4686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 121.92 134.62 0)
 			(effects
 				(font
@@ -4919,7 +4919,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 105.41 134.62 0)
 			(effects
 				(font
@@ -5075,7 +5075,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 121.92 69.85 0)
 			(effects
 				(font
@@ -5231,7 +5231,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 105.41 69.85 0)
 			(effects
 				(font
@@ -5387,7 +5387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 105.41 113.03 0)
 			(effects
 				(font
@@ -5719,7 +5719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 154.94 113.03 0)
 			(effects
 				(font
@@ -5787,7 +5787,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 154.94 91.44 0)
 			(effects
 				(font
@@ -5855,7 +5855,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 138.43 91.44 0)
 			(effects
 				(font
@@ -6187,7 +6187,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 138.43 134.62 0)
 			(effects
 				(font
@@ -6255,7 +6255,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_Plate_1.00u"
+		(property "Footprint" "SillyPad:SW_Cherry_MX_Plate_1.00u"
 			(at 138.43 69.85 0)
 			(effects
 				(font
