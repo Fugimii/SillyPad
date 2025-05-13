@@ -2,6 +2,8 @@
 
 A 4x4 macropad I made with [KiCad](https://www.kicad.org/) and [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) to learn how to make pcbs!
 
+You can find footprints and 3D Models in `SillyPad.pretty`
+
 Components used:
  - 1 x [Pi Pico Clone Board](https://www.aliexpress.com/item/1005008777234500.html?spm=a2g0o.order_list.order_list_main.11.f56418023OoaDa)
  - 16 x [3 Pin Cherry MX Switches](https://www.aliexpress.com/item/1005002378701948.html?spm=a2g0o.order_list.order_list_main.29.f56418023OoaDa)
