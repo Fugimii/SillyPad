@@ -1,0 +1,151 @@
+/* Catppuccin Mocha Theme */
+:root {
+    --bg: #1E1E2E;
+    --text: #DCE0E8;
+    --accent: #CBA6F7;
+    --darker-accent: #66537d;
+    --accent2: #fab387;
+    --button-bg: #302D41;
+    --button-hover: #575268;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--accent);
+}
+
+#title {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(120deg,var(--accent),var(--accent2));
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--text);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#make-it-yourself {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#make-it-yourself:hover {
+    border: 2px solid var(--accent2);
+    background-color: var(--accent2);
+    color: black;
+}
+
+#buy-now {
+    border-color: var(--accent);
+    transition: 0.3s;
+    border-style: solid;
+}
+
+#buy-now:hover {
+    border-color: var(--accent2);
+}
+
+img {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: var(--button-bg);
+    border-radius: 12px;
+    padding: 24px 24px;
+    text-align: left;
+    border: 2px solid var(--darker-accent);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border-color: var(--accent);
+}
+
+.card h3 {
+    color: var(--accent);
+    margin-top: 0;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.description {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    font-size: 1em;
+    text-align: left;
+    color: var(--text);
+    margin-top: 10px;
+}
+
+.description a:link {
+    color: var(--accent);
+}
+
+.description a:visited {
+    color: var(--darker-accent);
+}
+
+.description a:hover {
+    color: var(--accent2);
+}
