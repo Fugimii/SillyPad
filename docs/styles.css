@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
 :root {
     --mocha-bg: #1e1e2e;
     --mocha-surface: #313244;
@@ -8,11 +11,11 @@
     --mocha-shadow: #18182544;
     --mocha-img-bg: #181825;
     --mocha-border: #45475a;
-    --font-main: 'Inter', 'Arial', sans-serif;
+    --gradient-colors: #cba6f7, #cba6f7, #cba6f7, #cba6f7, #cba6f7;
 }
 
 * {
-    font: 16px var(--font-main);
+    font: 16px 'Bricolage Grotesque', sans-serif;
     background: none;
     box-sizing: border-box;
     color: var(--mocha-text);
@@ -22,6 +25,14 @@ body {
     background-color: var(--mocha-bg);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 button {
@@ -43,38 +54,115 @@ button:hover {
 }
 
 #hero-title {
-    font-size: 3rem;
-    font-weight: 700;
+    font-family: 'Crimson Pro', serif;
+    font-size: 7.5rem;
+    font-weight: 300;
     color: var(--mocha-text);
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
     letter-spacing: -1px;
+    position: relative;
 }
 
 #hero-subtitle {
-    font-size: 1.25rem;
+    margin: 10px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
     color: var(--mocha-subtle);
     text-align: center;
     margin-bottom: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #hero-buttons {
     display: flex;
     justify-content: center;
     margin-top: 32px;
-    gap: 5px;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .hero-button {
     background-color: var(--mocha-accent);
     color: var(--mocha-bg);
     border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
+    padding: 16px 32px;
+    border-radius: 12px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
+    transition: all 0.2s;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.fancy-button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    color: var(--mocha-bg);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fancy-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, var(--gradient-colors));
+    background-size: 200% 200%;
+    z-index: -2;
+    opacity: 0;
+    filter: blur(20px);
+    animation: rotate-gradient 4s linear infinite;
+    transition: opacity 0.7s ease;
+}
+
+.fancy-button:hover::before {
+    opacity: 0.8;
+}
+
+.fancy-button::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--mocha-accent);
+    border-radius: 12px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.fancy-button:hover {
+    transform: scale(5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.fancy-button:hover::after {
+    background: rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+@keyframes rotate-gradient {
+    0% {
+        transform: rotate(0deg);
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-position: 0% 50%;
+    }
 }
 
 #hero-image {
@@ -84,17 +172,18 @@ button:hover {
     display: block;
     margin: 32px auto 0 auto;
     border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 #features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 8px;
+    gap: 24px;
     max-width: 1000px;
-    margin-top: 48px;
+    margin: 80px auto;
     padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .feature-card {
@@ -103,23 +192,31 @@ button:hover {
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 4px 12px var(--mocha-shadow);
-    transition: transform 0.2s, border-color 0.2s;
+    transition: 0.2s ease;
 }
 
 .feature-card:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
     border-color: var(--mocha-accent);
-}
-
-.feature-card h2 {
-    font-size: 1.25rem;
-    margin-bottom: 12px;
-    color: var(--mocha-accent);
 }
 
 .feature-card p {
     color: var(--mocha-subtle);
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--mocha-accent);
+}
+
+footer {
+    color: var(--mocha-text);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid var(--mocha-border);
+    margin-top: 60px;
+}

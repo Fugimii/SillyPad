@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SillyPad</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <section>
+    <section class="hero-section">
         <h1 id="hero-title">SillyPad</h1>
         <p id="hero-subtitle">A compact 4x4 programmable keyboard with an integrated screen and dual rotary encoders.</p>
         <div id="hero-buttons">
-            <button class="hero-button">Buy Now</button>
-            <button class="hero-button">Make it yourself!</button>
+            <button class="hero-button fancy-button">Buy Now</button>
+            <button class="hero-button fancy-button">Make it yourself!</button>
         </div>
-        <img src="sillypad.png" alt="SillyPad Keyboard" id="hero-image">
+        <img src="./sillypad.png" alt="SillyPad Keyboard" id="hero-image">
     </section>
+
     <section id="features">
         <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-tv"></i></div>
             <h2>OLED Screen</h2>
             <p>Display stats, icons, or whatever you can imagine.</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
             <h2>Dual Encoders</h2>
             <p>Scroll, zoom, or control volume with precision.</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon"><i class="fab fa-github"></i></div>
             <h2>Open Source</h2>
             <p>Fully customizable with QMK and VIA</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-plug"></i></div>
             <h2>USB C Port</h2>
             <p>Works with any device from Windows to Macos to Linux, even Android.</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-cube"></i></div>
             <h2>3D Printed</h2>
             <p>Customisable 3D printed enclosure.</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-keyboard"></i></div>
             <h2>16 keys</h2>
             <p>Perfect for streaming, gaming, video editing, CAD and more!</p>
         </div>
     </section>
+
+    <footer>
+        <p>This is isn't a real product, I made it for school.</p>
+    </footer>
 </body>
 </html>
