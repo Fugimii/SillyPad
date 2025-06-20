@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SillyPad Keyboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: 'Segoe UI', sans-serif; background: #1e1e2e; color: #cdd6f4; }
+    a { color: #9d7cd8; text-decoration: none; }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    header { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    header h1 { font-size: 1.75rem; color: #f5c2e7; }
+    nav a { margin-left: 1.5rem; font-weight: 500; }
+
+    .hero { display: flex; align-items: center; padding: 4rem 0; flex-wrap: wrap; }
+    .hero-text { flex: 1; min-width: 280px; }
+    .hero-text h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #f2cdcd; }
+    .hero-text p { font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.6; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; background: #9d7cd8; color: #1e1e2e; border-radius: 0.5rem; font-weight: 600; }
+    .hero-image { flex: 1; text-align: center; min-width: 280px; }
+    .hero-image img { width: 80%; max-width: 400px; border: 4px solid #9d7cd8; border-radius: 1rem; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin: 4rem 0; }
+    .feature { background: #313244; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+    .feature h3 { margin-bottom: 0.75rem; color: #89b4fa; }
+    .feature p { line-height: 1.5; font-size: 0.95rem; }
+
+    footer { text-align: center; padding: 2rem 0; font-size: 0.875rem; color: #585b70; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>SillyPad</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h2>Meet the SillyPad</h2>
+      <p>A compact 4x4 programmable keyboard with an integrated screen and dual rotary encoders. Perfect for creators, streamers, and productivity enthusiasts.</p>
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+    <div class="hero-image">
+      <img src="sillypad.png" alt="SillyPad Keyboard" />
+    </div>
+  </section>
+
+  <section id="features" class="container">
+    <div class="features">
+      <div class="feature">
+        <h3>4x4 Custom Layout</h3>
+        <p>Fully programmable keys to suit your workflow. Assign macros, shortcuts, or media controls in a snap.</p>
+      </div>
+      <div class="feature">
+        <h3>Vibrant Mini Display</h3>
+        <p>Keep track of active profiles, system stats, or custom animations on the crisp onboard screen.</p>
+      </div>
+      <div class="feature">
+        <h3>Dual Encoders</h3>
+        <p>Navigate, scroll, or adjust volume with precision using two smooth rotary encoders.</p>
+      </div>
+      <div class="feature">
+        <h3>Mocha Theme</h3>
+        <p>A sleek, dark aesthetic with purple accents inspired by the Cattpucin Mocha palette.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="container">
+    <p>Designed &amp; Built by You • <a href="mailto:you@example.com">Contact us</a></p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.hero-image img').forEach(img => {
+      img.addEventListener('click', () => {
+        img.style.transform = 'rotate(360deg)';
+        img.style.transition = 'transform 0.8s ease';
+        setTimeout(() => img.style.transform = 'rotate(0deg)', 800);
+      });
+    });
+  </script>
+</body>
+</html>

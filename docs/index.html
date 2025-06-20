@@ -5,39 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SillyPad</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1 id="title">Its a very, very silly mini keyboard</h1>
-        <div class="buttons">
-            <a href="https://github.com/fugimii/sillypad" id="make-it-yourself">Make it yourself!</a>
-            <button id="buy-now">Buy now!</button>
+    <section>
+        <h1 id="hero-title">SillyPad</h1>
+        <p id="hero-subtitle">A compact 4x4 programmable keyboard with an integrated screen and dual rotary encoders.</p>
+        <div id="hero-buttons">
+            <button class="hero-button">Buy Now</button>
+            <button class="hero-button">Make it yourself!</button>
         </div>
-        <img src="sillypad.png" alt="SillyPad Image">
-        <h2>SillyPad is an open source, 3D printed mini keyboard</h2>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <h3>Open source</h3>
-            <p>All code, models and PCBs are available on Github under GPLv3 for hacking and customisation.</p>
+        <img src="sillypad.png" alt="SillyPad Keyboard" id="hero-image">
+    </section>
+    <section id="features">
+        <div class="feature-card">
+            <h2>OLED Screen</h2>
+            <p>Display stats, icons, or whatever you can imagine.</p>
         </div>
-        <div class="card">
-            <h3>Uses Via and QMK</h3>
-            <p>Customise with the popular program VIA, or code your own firmware with QMK.</p>
+        <div class="feature-card">
+            <h2>Dual Encoders</h2>
+            <p>Scroll, zoom, or control volume with precision.</p>
         </div>
-        <div class="card">
-            <h3>3D Printed</h3>
-            <p>The case is 3D printed, making it easy to customize colors and styles as long as you have access to a 3D printer.</p>
+        <div class="feature-card">
+            <h2>Open Source</h2>
+            <p>Fully customizable with QMK and VIA</p>
         </div>
-        <div class="card">
-            <h3>Compact and portable</h3>
-            <p>Small and lightweight, SillyPad fits easily in your bag or pocket perfect for travel or any workspace.</p>
+        <div class="feature-card">
+            <h2>USB C Port</h2>
+            <p>Works with any device from Windows to Macos to Linux, even Android.</p>
         </div>
-    </div>
-    <div class="description">
-        <h1>But what is Sillypad really?</h1>
-        <p>SillyPad is a macropad with 16 keys, a 0.96" 128x64 single colour OLED screen and 2 rotary encoders. All powered by a USB C Rasberry Pi Pico running QMK, compatible with <a href="https://usevia.app">VIA</a>.</p>
-    </div>
+        <div class="feature-card">
+            <h2>3D Printed</h2>
+            <p>Customisable 3D printed enclosure.</p>
+        </div>
+        <div class="feature-card">
+            <h2>16 keys</h2>
+            <p>Perfect for streaming, gaming, video editing, CAD and more!</p>
+        </div>
+    </section>
 </body>
 </html>
