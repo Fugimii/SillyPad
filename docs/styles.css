@@ -62,12 +62,31 @@ button:hover {
     font-family: 'Crimson Pro', serif;
     font-size: 7.5rem;
     font-weight: 300;
-    color: var(--mocha-text);
+    color: transparent;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
     letter-spacing: -1px;
     position: relative;
+    background: linear-gradient(40deg, #cba6f7, #f5c2e7, #b4befe, #cba6f7, #f5c2e7, #b4befe);
+    background-size: 200% 200%;
+    animation: hero-gradient-move 6s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mask-clip: text;
+}
+
+@keyframes hero-gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #hero-subtitle {
