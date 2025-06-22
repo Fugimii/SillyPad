@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
+@font-face {
+  font-family: FiraCode;
+  src: url(FiraCodeNerdFont-Regular.ttf);
+}
+
 :root {
     --mocha-bg: #1e1e2e;
     --mocha-surface: #313244;
@@ -176,7 +181,6 @@ a {
     display: block;
     margin: 32px auto 0 auto;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 1;
 }
@@ -212,7 +216,9 @@ a {
 
 .feature-icon {
     font-size: 2.5rem;
+    margin-top: 0px;
     margin-bottom: 15px;
+    font-family: FiraCode;
     color: var(--mocha-accent);
 }
 
