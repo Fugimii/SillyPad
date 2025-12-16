@@ -2,6 +2,8 @@
 
 A 4x4 macropad I made with [KiCad](https://www.kicad.org/) and [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) to learn how to make pcbs!
 
+<img width="931" height="956" alt="image" src="https://github.com/user-attachments/assets/ea0c0c0b-8064-4de5-9c61-a33ee5fae32d" />
+
 You can find footprints and 3D Models in `SillyPad.pretty`
 
 Components used:
