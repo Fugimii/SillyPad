@@ -1,12 +1,12 @@
 # fugimii/sillypad
 
-![fugimii/sillypad](imgur.com image replace me!)
+![fugimii/sillypad](https://github.com/Fugimii/SillyPad/blob/main/sillypad_qmk/Sillypad.jpg)
 
-*A short description of the keyboard/project*
+A silly 5x4 macropad I made to learn PCB development!
 
 * Keyboard Maintainer: [Fugimii](https://github.com/Fugimii)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: Pi Pico
+* Hardware Availability: https://www.raspberrypi.com/products/raspberry-pi-pico/
 
 Make example for this keyboard (after setting up your build environment):
 
